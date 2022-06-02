@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with= device-width, initial-scale= 1.0">
+    <title> POLYSEG </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="sub-header"> 
+    <nav>
+        <!--<a href="index.html"><img src="images/logo.png" class="logo"></a>-->
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="login-page.php">LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <h1 style="font-size:x-large">Contact Us</h1>
+    </section>
+
+    <!--Contact Content-->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.2111476252726!2d120.98259631432012!3d14.587040981320758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca21ac302015%3A0x92dcca0f915010d9!2sTechnological%20University%20of%20the%20Philippines%20-%20Manila!5e0!3m2!1sen!2sph!4v1630916944686!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    
+    <section class="form">
+        <form action="form-handler.php" method="POST">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="message" placeholder="Message" required>
+            <textarea rows="8" name="details" placeholder="Additional details"></textarea>
+            <button type="submit" class="form-btn">Submit</button>
+        </form>
+    </section>
+
+    <section class="contact-info">
+        <div class="icons">
+            <i class="fa fa-home"></i> 
+            <span>
+                <h5>Ayala Blvd, Ermita, Manila, 1000 Metro Manila</h5>
+                <p>Address</p>
+            </span>
+        </div>
+        <div class="icons">
+            <i class="fa fa-phone"></i> 
+            <span>
+                <h5>0926 032 1173</h5>
+                <p>Phone no.</p>
+            </span>
+        </div>
+        <div class="icons">
+            <i class="fa fa-envelope-o"></i> 
+            <span>
+                <h5>pentatronics.polyseg@gmail.com</h5>
+                <p>Email Address</p>
+            </span>
+        </div>
+    </section>
+    
+
+
+<!--Footer-->
+<footer class="footer">
+    <h4>About Us</h4>
+    <p>FULLY AUTOMATED POLYSTYRENE BIODEGRADING SYSTEM FOR MEALWORM 
+        SEGREGATION USING ARDUINO MEGA 2560 <br> WITH ESP 32 FOR WIRELESS 
+        NOTIFICATION<br>Technological University of the Philippines - Manila<br>
+        Ayala Blvd, Ermita, Manila, 1000 Metro Manila<br><br>
+        College of Engineering<br>
+        Electronics Engineering Department<br>
+        Email: pentatronics.polyseg@gmail.com • Contact No.: 0926 032 1173   
+    </p>   
+</footer>
+</body>
+</html>

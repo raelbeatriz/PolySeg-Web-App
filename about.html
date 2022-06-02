@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="with= device-width, initial-scale= 1.0">
+    <title> POLYSEG </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="sub-header"> 
+    <nav>
+        <!--<a href="index.html"><img src="images/logo.png" class="logo"></a>-->
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="login-page.php">LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <h1 style="font-size:x-large">About Us</h1>
+    </section>
+
+    <!--About Us Content-->
+    <div class="about-title">
+        <h1>FULLY AUTOMATED POLYSTYRENE BIODEGRADING SYSTEM FOR MEALWORM 
+            SEGREGATION USING ARDUINO MEGA 2560 WITH ESP 32 FOR WIRELESS 
+            NOTIFICATION</h1>
+    </div>
+
+    <!--<img class="about-image" src="images/aboutus.jpg" alt="Styrofoam Eating Mealworms">-->
+
+    <div class="w3-container">
+      </div>
+      
+      <div class="w3-content" style="max-width:1200px">
+        <img class="mySlides" src="images/bg2.png" style="width:100%;display:none">
+        <img class="mySlides" src="images/bg3.png" style="width:100%">
+        <img class="mySlides" src="images/bg1.png" style="width:100%;display:none">
+      
+        <div class="w3-row-padding w3-section">
+          <div class="w3-col s4">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="images/bg2.png" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+          </div>
+          <div class="w3-col s4">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="images/bg3.png" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+          </div>
+          <div class="w3-col s4">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="images/bg1.png" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+          </div>
+        </div>
+      </div>
+      
+      <script>
+      function currentDiv(n) {
+        showDivs(slideIndex = n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " w3-opacity-off";
+      }
+      </script>
+
+    <section class="about-content">
+        <p>A non-biodegradable material is a substance that cannot be broken down by natural 
+            organisms and is thus a source of pollution or contamination. Non-biodegradable wastes, 
+            unlike biodegradable wastes, are difficult to manage. Wastes that are non-biodegradable 
+            cannot be decomposed or dissolved by natural agents. They will exist on earth for 
+            thousands of years without deteriorating. Many plastics and Styrofoam containers made of 
+            polystyrene are non-biodegradable (Mathur, 2021). Polystyrene degrades so slowly that it 
+            cannot be considered as a biodegradable material. According to the Environmental Action 
+            Association, most polystyrene that ends up in landfills will still be there in 500 years 
+            (Korpella, 2019).
+            </p>
+            <p>Mealworms are the larvae of the beetle Tenebrio molitor, a darkling beetle 
+                organism. Mealworms are commonly fed to reptiles and birds as a staple food. They are 
+                often put out in bird feeders for wild birds, particularly during the nesting season, when 
+                birds are raising their young and appreciate a ready supply of food. Also, they're sometimes 
+                used as bait for fishing. Mealworm frass has a high fertilizer capacity, according to 
+                chemical analysis. Frass, unlike traditional mineral fertilizer, produced small amounts of 
+                micronutrients (such as Cu and Zn), which could be beneficial to crops (Houben, 2020). 
+                Eggs, larvae, pupae, and adults are the four stages of development for mealworm beetles. 
+                The length of time it takes for insects to progress through these stages is affected by the 
+                temperature of their surroundings and the food availability (“Mealworm Beetle Life Cycle”, 
+                2018). With a retention period of less than 24 hours, Styrofoam can be efficiently degraded 
+                in the larval gut. Over the course of a month, larvae that are fed only with Styrofoam 
+                survived just as well as those fed a regular diet or bran (Yang et al., 2015).</p>
+                <p>Automating the rearing, collecting, and handling of insects is a vital step toward 
+                    making insect mass production more appealing, cost-effective, and competitive. With little 
+                    to no human intervention, an automated mass rearing system may promote mass organism 
+                    growth from egg hatching to full adults or some stages in between, such as the larvae 
+                    rearing process. Deaths and developmental disorders may be reduced by automating the 
+                    rearing and transportation of these organisms. Various techniques and apparatuses are used 
+                    in this automation to cause the least amount of disruption to the organisms during growth 
+                    which would optimize the organisms' survival rate and health (Massaro, 2016).</p>
+                    <p>The observation that mealworms can biodegrade polystyrene is now a building 
+                    block toward decomposing a non-biodegradable waste into a biodegradable one. This 
+                    research will be effective by using an automated technology providing a system that will 
+                    continuously biodegrade Styrofoam by providing a rearing mechanism to the beetle's life 
+                    cycle.</p>
+    </section>
+    
+
+
+    <!--Footer-->
+    <footer class="footer">
+      <h4>About Us</h4>
+      <p>FULLY AUTOMATED POLYSTYRENE BIODEGRADING SYSTEM FOR MEALWORM 
+          SEGREGATION USING ARDUINO MEGA 2560 <br> WITH ESP 32 FOR WIRELESS 
+          NOTIFICATION<br>Technological University of the Philippines - Manila<br>
+          Ayala Blvd, Ermita, Manila, 1000 Metro Manila<br><br>
+          College of Engineering<br>
+          Electronics Engineering Department<br>
+          Email: pentatronics.polyseg@gmail.com • Contact No.: 0926 032 1173   
+      </p>   
+  </footer>
+
+
+</body>
+</html>
